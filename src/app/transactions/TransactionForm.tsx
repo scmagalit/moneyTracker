@@ -63,7 +63,6 @@ function TransactionForm({ onSubmit, tranId, buttonLabel }: props) {
             if (tranId) {
                 const res = await getTransactionDetails(tranId);
                 transaction = res.data ? res.data[0] : null;
-                console.log(transaction);
             }
 
             if (transaction) {

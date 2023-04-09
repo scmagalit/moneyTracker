@@ -77,8 +77,6 @@ export async function updateAccount(data: accountFormData) {
             .from('transactions')
             .update(row)
             .eq('id', origData.first_trans.id);
-
-        console.log(res);
     }
 
     // * Add an adjustment transaction to adjust current balance

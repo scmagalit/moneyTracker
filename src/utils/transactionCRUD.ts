@@ -88,6 +88,4 @@ export async function updateTransaction(data: transactionFormData) {
     };
 
     const res = await supabase.from('transactions').update(row).eq('id', data.id);
-
-    console.log(res);
 }
